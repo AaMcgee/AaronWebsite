@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {   
+    overflow: auto;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #ddd;
+}
+
+.main {
+    margin: 5%;
+}  
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+#cta {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    Color: white;
+    background-color: red;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#cta:hover
+{
+background-color: black;
+text-decoration: underline;
+
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    padding: 80px 80px 400px 80px;
+    text-align: center;
+}
+
+.about-content{
+    display: flex;
+    width: 2600px;
+    margin: 10px;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.about img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.projects{
+    padding: 10px;
+    text-align: center;
+}
+
+.project-grid{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+.project-card{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.project-card:after{
+    content: ' ';
+    background: url('Assets/other.jpg') no-repeat;
+    background-size: cover;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+
+}
+
+.project-card:hover{
+    transform: rotateY(180deg);
+}
+
+.project-card:hover::after {
+    opacity: 1;
+}
